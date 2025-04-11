@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruit Order Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/fruits.css" />
+</head>
+<body class="bg-green-50 text-gray-800">
+
+  <header class="bg-green-800 text-white text-center p-6 text-2xl font-bold">
+    Fruit Order Details
+  </header>
+
+  <section class="max-w-xl mx-auto py-10 px-6 bg-white mt-10 shadow-lg rounded-lg">
+    <form action="https://pay.google.com/" method="get">
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Full Name</label>
+        <input type="text" class="w-full border p-2 rounded" required />
+      </div>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Mobile Number</label>
+        <input type="tel" class="w-full border p-2 rounded" required />
+      </div>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Address</label>
+        <textarea class="w-full border p-2 rounded" required></textarea>
+      </div>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Fruit Quantity (kg or dozens)</label>
+        <input type="number" min="1" class="w-full border p-2 rounded" required />
+      </div>
+      <!-- Receiving Payment UPI ID Field -->
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Merchant UPI ID</label>
+        <input type="text" class="w-full border p-2 rounded" value="swarupshivalkar3277-1@okaxis" readonly />
+      </div>
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
+        Proceed to Pay with Google Pay
+      </button>
+    </form>
+  </section>
+
+</body>      
+</html>
+
+<!-- QR Code for UPI Payment -->
+<div class="mb-4 text-center">
+    <label class="block font-semibold mb-2">Scan QR Code to Pay</label>
+    <img src="assets/images/qrcode.jpg" alt="UPI QR Code" class="mx-auto w-48 h-48 object-contain border rounded-lg shadow-md" />
+  </div>
+  

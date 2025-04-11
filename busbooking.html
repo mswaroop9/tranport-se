@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bus Booking - All Routes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/bus.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-800 text-white p-5">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Bus Booking Portal</h1>
+      <a href="index.html" class="hover:underline">← Back to Home</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-100 py-10 text-center">
+    <h2 class="text-3xl font-bold mb-3">Book Private & Government Buses</h2>
+    <p class="text-lg text-gray-700">Check available timings, destinations, and book easily online.</p>
+  </section>
+
+  <!-- Bus Timings -->
+  <section class="max-w-6xl mx-auto py-10 px-4">
+    <h3 class="text-2xl font-semibold mb-6">Available Buses & Timings</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full table-auto border-collapse border border-gray-300 text-left">
+        <thead class="bg-blue-200">
+          <tr>
+            <th class="p-3 border">Type</th>
+            <th class="p-3 border">Bus Name</th>
+            <th class="p-3 border">From</th>
+            <th class="p-3 border">To</th>
+            <th class="p-3 border">Departure</th>
+            <th class="p-3 border">Arrival</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr class="hover:bg-gray-100">
+            <td class="p-3 border">Government</td>
+            <td class="p-3 border">State Express</td>
+            <td class="p-3 border">City A</td>
+            <td class="p-3 border">City B</td>
+            <td class="p-3 border">07:00 AM</td>
+            <td class="p-3 border">11:30 AM</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="p-3 border">Private</td>
+            <td class="p-3 border">Travel Plus</td>
+            <td class="p-3 border">City A</td>
+            <td class="p-3 border">City C</td>
+            <td class="p-3 border">08:30 AM</td>
+            <td class="p-3 border">01:00 PM</td>
+          </tr>
+          <tr class="hover:bg-gray-100">
+            <td class="p-3 border">Private</td>
+            <td class="p-3 border">LuxBus</td>
+            <td class="p-3 border">City B</td>
+            <td class="p-3 border">City D</td>
+            <td class="p-3 border">10:00 AM</td>
+            <td class="p-3 border">03:30 PM</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="bg-white py-12 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6 text-center">Book Your Bus Ticket</h3>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block mb-1 font-semibold">Full Name</label>
+          <input type="text" class="w-full border rounded p-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Phone Number</label>
+          <input type="tel" class="w-full border rounded p-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Select Bus</label>
+          <select class="w-full border rounded p-2" required>
+            <option value="">-- Choose Bus --</option>
+            <option>State Express</option>
+            <option>Travel Plus</option>
+            <option>LuxBus</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Travel Date</label>
+          <input type="date" class="w-full border rounded p-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">From</label>
+          <input type="text" class="w-full border rounded p-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">To</label>
+          <input type="text" class="w-full border rounded p-2" required>
+        </div>
+        <div class="md:col-span-2 text-center">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+            Book Now
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 Bus Transport Services. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Use a clean modern font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4 {
+    letter-spacing: 0.5px;
+  }
+  
+  /* Hero section */
+  section.bg-green-100 {
+    background: linear-gradient(to right, #d3f9d8, #a3e635);
+    color: #1a202c;
+  }
+  
+  /* Form elements */
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #38a169;
+    box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.3);
+  }
+  
+  /* Button styling */
+  button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Image gallery hover effect */
+  .gallery img,
+  .grid img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery img:hover,
+  .grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Footer style */
+  footer {
+    background: linear-gradient(to right, #065f46, #047857);
+    color: #fff;
+  }
+  
+  /* Optional custom file input styling */
+  input[type="file"] {
+    border: 2px dashed #9ae6b4;
+    background-color: #f0fff4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #c6f6d5;
+  }
+  

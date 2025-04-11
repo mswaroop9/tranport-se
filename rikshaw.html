@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Rickshaw Near You</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #map {
+      width: 100%;
+      height: 300px;
+      border-radius: 1rem;
+    }
+  </style>
+  <link rel="stylesheet" href="css/rikshaw.css" />
+</head>
+<body class="bg-yellow-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 text-center text-3xl font-bold">
+    Book Rickshaw Near You 🛺
+  </header>
+
+  <!-- Rickshaw Info Section -->
+  <section class="max-w-5xl mx-auto py-10 px-6">
+    <h2 class="text-2xl font-semibold mb-6">Available Rickshaws</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white shadow-md p-5 rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Rickshaw No: MH12-4567</h3>
+        <p><strong>Owner:</strong> Rajesh Pawar</p>
+        <p><strong>License:</strong> LIC12345678</p>
+        <p><strong>Availability:</strong> Yes ✅</p>
+      </div>
+
+      <div class="bg-white shadow-md p-5 rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Rickshaw No: MH14-9981</h3>
+        <p><strong>Owner:</strong> Sunil Patil</p>
+        <p><strong>License:</strong> LIC87654321</p>
+        <p><strong>Availability:</strong> Yes ✅</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="max-w-5xl mx-auto px-6 py-8">
+    <h2 class="text-2xl font-semibold mb-4">Your Location</h2>
+    <div id="map"></div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="max-w-xl mx-auto px-6 py-10 bg-white shadow-xl rounded-xl">
+    <h2 class="text-xl font-bold mb-6">Book a Rickshaw</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Your Name</label>
+        <input type="text" class="w-full border p-2 rounded" required />
+      </div>
+
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Pickup Location</label>
+        <input type="text" class="w-full border p-2 rounded" required />
+      </div>
+
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Phone Number</label>
+        <input type="tel" class="w-full border p-2 rounded" required />
+      </div>
+
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
+        Confirm Booking
+      </button>
+    </form>
+  </section>
+
+  <!-- Google Maps Script -->
+  <script>
+    function initMap() {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: userLocation,
+        });
+
+        new google.maps.Marker({
+          position: userLocation,
+          map: map,
+          title: "You are here",
+        });
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruit & Human Transport Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="car.jpg">
+
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-600 text-white p-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TransportHub</h1>
+      <nav class="space-x-6">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#booking" class="hover:underline">Booking</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-100 py-16 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Fast & Reliable Transport for Fruits, Trees & People</h2>
+      <p class="text-lg mb-6">From mango crates to long-distance travel, we connect it all.</p>
+      <a href="#booking" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">Book Now</a>
+    </div>
+  </section>
+  <!-- Featured Transport Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-10">Our Featured Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <!-- Rickshaw -->
+        <a href="rikshaw.html" class="block">
+        <div class="shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
+          <img src="assets/images/rikshaw.jpeg" alt="Rickshaw Transport" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg">BOOK YOUR RIKSHAW RIDE</h4>
+          </div>
+        </div>
+  
+        <!-- Fruits -->
+        <a href="fruitstore.html" class="block">
+        <div class="shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
+          <img src="assets/images/fruits.jpeg" alt="Fruit Delivery" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg">BUY MANGO AND OTHERS FRUITS</h4>
+          </div>
+        </div>
+  
+        <!-- Human Transport -->
+        <a href="busbooking.html" class="block">
+        <div class="shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
+          <img src="assets/images/bus travel.jpeg" alt="Human Transport" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg">Bus travel </h4>
+          </div>
+        </div>
+  
+        <!-- Car -->
+        <a href="carstore.html" class="block">
+        <div class="shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
+          <img src="assets/images/car.jpg" alt="Car Transport" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg">Car Transport</h4>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+   
+
+  
+ 
+  <!-- Booking Section -->
+  <section id="booking" class="py-16 bg-green-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">Quick Booking</h3>
+      <form class="bg-white p-6 rounded-lg shadow-md grid gap-4">
+        <input type="text" placeholder="Your Name" class="p-3 border border-gray-300 rounded">
+        <input type="text" placeholder="Pickup Location" class="p-3 border border-gray-300 rounded">
+        <input type="text" placeholder="Destination" class="p-3 border border-gray-300 rounded">
+        <select class="p-3 border border-gray-300 rounded">
+          <option>Select Service</option>
+          <option>Fruit Transport</option>
+          <option>Rickshaw/Bus</option>
+          <option>Long-Distance Travel</option>
+        </select>
+        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-800 text-white p-6 mt-10 text-center">
+    <p>© 2025 TransportHub. All rights reserved.</p>
+    <p>Email: support@transporthub.com | Phone: +91-9876543210</p>
+  </footer>
+
+</body>
+</html>
